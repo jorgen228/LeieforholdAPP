@@ -157,6 +157,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid black;
   border-radius: 5px;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
