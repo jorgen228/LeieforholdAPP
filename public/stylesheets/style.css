@@ -41,6 +41,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 15px;
 }
 
+.space-container {
+  min-width: 10%;
+}
+
 .second-header-container {
   display: flex;
   align-items: center;
@@ -55,7 +59,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .header-text {
   font-style: italic;
   font-weight: bold;
-  font-size: 125%;
+  font-size: 18px;
   color: rgb(250, 250, 250);
   padding: 10px;
   font-family: minimal;
