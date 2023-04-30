@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css"
+    />
+    <script src="/javaScripts/jquery-3.6.0"></script>
+    <title>Leieforhold.no</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div>
+          <h1 class="main-header">Leieforhold.no</h1>
+        </div>
+        <div class="second-header-container">
+          <div class="header-text-container">
+            <p class="header-text">
+              «Vet du at depositum ved leieforhold skal stå på en egen konto som
+              ikke er tilgjengelig for uttak? Eller at leiekontrakt skal
+              spesifisere hvordan leieforholdet skal avsluttes?»
+            </p>
+          </div>
+          <div class="svg-container"><%- include("partials/svg.ejs") %></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="info-container">
+          <div class="first-text-container">
+            <p class="first-text">
+              "Jeg skulle ønske jeg visste dette før jeg valge å leie
+              leilighet."
+            </p>
+          </div>
+          <div>
+            <h3 class="info-page">Husleiekontrakt</h3>
+          </div>
+          <div>
+            <h3 class="info-page">Depositum</h3>
+          </div>
+          <div>
+            <h3 class="info-page">Visning</h3>
+          </div>
+          <div>
+            <h3 class="info-page">Avvik fra kontrakt</h3>
+          </div>
+          <div>
+            <h3 class="info-page">Utvask</h3>
+          </div>
+          <div>
+            <h3 class="info-page">Oppjustering av husleie</h3>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-text-container">
+          <h4 class="footer-text">
+            Er det noe du savner på denne siden? Send oss en melding
+          </h4>
+        </div>
+        <div class="form-div">
+          <form>
+            <input
+              placeholder="Navn:"
+              type="text"
+              id="fname"
+              name="fname"
+            /><br /><br />
+            <input
+              placeholder="Epost:"
+              type="email"
+              id="email"
+              name="email"
+            /><br /><br />
+            <textarea
+              placeholder="Melding:"
+              type="text"
+              id="message"
+              name="message"
+              rows="4"
+            ></textarea
+            ><br /><br />
+          </form>
+          <button id="submit-button">Submit</button>
+        </div>
+        <div class="footer-text-container">
+          <h4 class="footer-text">
+            Denne nettsiden er et hobbyprosjekt. Vi tar forbehold om mulige feil
+            eller utdatert innhold.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div id="info-section-parent">
+      <div id="info-section">
+        <div id="info-text-container" class="info-section-child">
+          <p class="info-text" id="info-text" style="display: none">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id
+            explicabo eligendi, ratione molestiae placeat labore deserunt nihil
+            omnis nam, inventore qui fugit sapiente? Iste maiores voluptatem
+            rerum voluptate dolorem.
+          </p>
+        </div>
+        <div id="back-button-container" class="info-section-child">
+          <button id="back-button" style="display: none">
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div z-index="4" class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <i class="bi bi-square-fill"></i>
+          <strong class="me-auto">Leieforhold.no</strong>
+          <small>For et sekund siden</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Meldingen din har blitt sendt.</div>
+      </div>
+    </div>
+
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="/javaScripts/script.js"></script>
+  </body>
+</html>
