@@ -65,6 +65,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-family: minimal;
 }
 
+svg {
+  min-width: 20px;
+}
 .main {
   justify-content: center;
   align-items: center;
